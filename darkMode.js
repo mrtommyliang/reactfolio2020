@@ -1,1 +1,0 @@
-// Component file for dark mode.  
