@@ -1,0 +1,34 @@
+.heroBanner{
+    /*Centering the Banner*/
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+
+    /* Background Generated from https://https://ztm-bg-generator.netlify.com/ */
+    background: LINEAR-GRADIENT(TO RIGHT, #2E2E2E, #AEF6EA);
+    
+    border: 3px solid grey;
+    border-radius: 25px;
+
+    height: 500px;
+    width: 80%;
+
+    /* box shadowing generated from https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: inset -4px -1px 13px 13px rgba(12,13,13,0.45);
+    -moz-box-shadow: inset -4px -1px 13px 13px rgba(12,13,13,0.45);
+    box-shadow: inset -4px -1px 13px 13px rgba(12,13,13,0.45);
+
+}
+
+.heroBanner:hover {
+    color: white;
+    background: black;
+    -webkit-box-shadow: -4px -1px 13px 13px rgba(12,13,13,0.45);
+    -moz-box-shadow: -4px -1px 13px 13px rgba(12,13,13,0.45);
+    box-shadow: -4px -1px 13px 13px rgba(12,13,13,0.45);
+}
+
+.softwareEngineerDetails {
+    display:inline;
+}
