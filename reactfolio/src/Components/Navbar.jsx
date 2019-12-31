@@ -1,30 +1,26 @@
 import React from 'react'
+// import { Link } from 'react-router-dom';
 import '../css/navbar.css'
-import navbarmenu from '../resources/bars-solid.svg'
 
-export default function Navbar() {
+const Navbar = () => {
+
   return (
-    <div>
-      <nav className="navbar"/>
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <img className="burgermenu" src={navbarmenu} alt="burger"/>
-        </span>
-        <a href="#" className="logo">Tommy Liang</a>
-        <ul class="main-nav" id="navbar-container">
-          <li>
-            <a href="#" className="nav-links">Projects</a>
-          </li>
-          <li>
-            <a href="#" className="nav-links">About</a>
-          </li>
-          <li>
-            <a href="#" className="nav-links">Contact</a>
-          </li>
-          <li>
-            <a href="#" className="nav-links">Resume</a>
-          </li>
+    <header>
+      <div className="brand">
+        <div className="logo">
+          <h4>Tommy Liang | Software Engineer</h4>
+        </div>
+      </div>
+      <nav className="navbar-nav">
+        <ul>
+          <li className="navbarItem"><a className="aItem" to="/Projects">Projects</a></li>
+          <li className="navbarItem"><a className="aItem" to="/About">About</a></li>
+          <li className="navbarItem"><a className="aItem" href="https://drive.google.com/file/d/12ZnhcA5XGJIXhu78_qV3FVt-njPZOXab/view?usp=sharing" target="_blank">Resume</a></li>
+          <li className="navbarItem"><a className="aItem" to="/Contact">Contact</a></li>
         </ul>
-      <nav/>
-    </div>
+      </nav>
+    </header>
   )
 }
+
+export default Navbar
